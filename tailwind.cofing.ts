@@ -1,3 +1,5 @@
+import type {Config} from "tailwindcss";
+
 const config: Config = {
 	darkMode: ["class"],
 	content: [
@@ -5,9 +7,6 @@ const config: Config = {
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 		"./sanity/**/*.{js,ts,jsx,tsx,mdx}",
-	],
-	safelist: [
-		"font-extrabold", // 👈 necessary for @apply
 	],
 	theme: {
 		extend: {

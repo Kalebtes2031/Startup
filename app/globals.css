@@ -114,6 +114,10 @@ body {
     padding: 1.5rem 2.5rem;
     max-width: 80rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .card_grid {
@@ -312,6 +316,11 @@ body {
     background-color: white;
     margin: 2.5rem 0;
     padding: 0 1.5rem;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
   }
 
   .startup-form_label {
@@ -354,6 +363,16 @@ body {
     color: black;
     font-weight: 600;
   }
+}
+.startup-form_btn {
+  background-color: var(--primary);
+  border: 4px solid black;
+  border-radius: 9999px;
+  padding: 1.25rem;
+  min-height: 70px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 @theme inline {

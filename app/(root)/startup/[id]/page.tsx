@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { client } from "@/sanity/lib/client";
 import {
-//   PLAYLIST_BY_SLUG_QUERY,
+  PLAYLIST_BY_SLUG_QUERY,
   STARTUP_BY_ID_QUERY,
 } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
@@ -21,14 +21,11 @@ export const experimental_ppr = true;
 const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id;
 
-  const [
-    post, 
-    // { select: editorPosts }
-] = await Promise.all([
+  const [post, { select: editorPosts }] = await Promise.all([
     client.fetch(STARTUP_BY_ID_QUERY, { id }),
-    // client.fetch(PLAYLIST_BY_SLUG_QUERY, {
-    //   slug: "editor-picks-new",
-    // }),
+    client.fetch(PLAYLIST_BY_SLUG_QUERY, {
+      slug: "editor-picks-new",
+    }),
   ]);
 
   if (!post) return notFound();
@@ -48,7 +45,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
         <img
           src={post.image}
           alt="thumbnail"
-          className="w-[1000px] h-[500px] rounded-2xl"
+          className="w-full h-auto rounded-xl"
         />
 
         <div className="space-y-5 mt-10 max-w-4xl mx-auto">
@@ -89,7 +86,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
         <hr className="divider" />
 
-        {/* {editorPosts?.length > 0 && (
+        {editorPosts?.length > 0 && (
           <div className="max-w-4xl mx-auto">
             <p className="text-30-semibold">Editor Picks</p>
 
@@ -99,7 +96,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
               ))}
             </ul>
           </div>
-        )} */}
+        )}
 
         <Suspense fallback={<Skeleton className="view_skeleton" />}>
           <View id={id} />

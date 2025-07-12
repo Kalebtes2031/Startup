@@ -70,7 +70,7 @@ body {
 
   .pink_container {
     width: 100%;
-    background-color: #080d36;
+    background-color: #456882;
     min-height: 530px;
     display: flex;
     justify-content: center;
@@ -158,7 +158,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #EE2B69;
+    background-color: #456882;
     border: 5px solid black;
     border-radius: 30px;
     position: relative;
@@ -295,7 +295,7 @@ body {
 
   .startup-card_btn {
     border-radius: 9999px;
-    background-color: #141413;
+    background-color: #456882;
     font-weight: 500;
     font-size: 16px;
     color: white;

@@ -36,7 +36,7 @@ export default async function Home({
           {query ? `Search results for "${query}"` : "All Startups"}
         </p>
 
-        <ul className="mt-7 card_grid sm:grid-cols-1 md:grid-cols-3">
+        <ul className="mt-7 card_grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {posts?.length > 0 ? (
             posts.map((post: StartupTypeCard) => (
               <StartupCard key={post?._id} post={post} />

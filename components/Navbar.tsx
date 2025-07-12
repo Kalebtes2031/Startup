@@ -8,17 +8,19 @@ const Navbar = async () => {
   const session = await auth();
 
   return (
-    <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
+    <header className="px-5 py-3 bg-primary shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
-        <Link href="/">
-          <Image src="/logo.png" alt="logo" width={144} height={30} />
-        </Link>
+        <div className="flex justify-center items-center w-[60px] h-[60px] rounded-full object-cover">
+          <Link href="/">
+            <Image src="/startuplogo.png" alt="logo" width={60} height={60} className="rounded-full "/>
+          </Link>
+        </div>
 
-        <div className="flex items-center gap-5 text-black">
+        <div className="flex items-center gap-5 text-white">
           {session && session?.user ? (
             <>
               <Link href="/startup/create">
-                <span className="max-sm:hidden">Create</span>
+                <span className="max-sm:hidden text-white font-mono">Create</span>
                 <BadgePlus className="size-6 sm:hidden" />
               </Link>
 

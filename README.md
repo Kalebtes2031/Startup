@@ -48,15 +48,15 @@ Help us grow this open collection of innovative startup ideas by browsing or sub
 
 ### Home Page
 
-![Home Page](https://via.placeholder.com/800x450?text=Home+Page+Screenshot)
+![Home Page](https://github.com/user-attachments/assets/317e9b5a-dc9d-4f19-9b3b-ecaef7ec0cce)
 
 ### Profile Page
 
-![Profile Page](https://via.placeholder.com/800x450?text=Profile+Page+Screenshot)
+![Profile Page](https://github.com/user-attachments/assets/c856c3f9-fe88-4dfa-b369-f8bc35c56fe5)
 
 ### Submit Startup Page
 
-![Submit Page](https://via.placeholder.com/800x450?text=Submit+Page+Screenshot)
+![Submit Page](https://github.com/user-attachments/assets/523eabed-c4ab-4adb-8823-f253761a81e6)
 
 ---
 

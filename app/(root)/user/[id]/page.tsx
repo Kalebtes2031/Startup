@@ -18,7 +18,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   return (
     <>
-      <section className="profile_container">
+      <section className="profile_container flex flex-col md:flex-row gap-10 lg:gap-20">
         <div className="profile_card">
           <div className="profile_title">
             <h3 className="text-24-black uppercase text-center line-clamp-1">

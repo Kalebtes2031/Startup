@@ -44,8 +44,6 @@ Help us grow this open collection of innovative startup ideas by browsing or sub
 
 ## 📸 Screenshots
 
-> Upload your screenshots via GitHub or external image hosting and replace the URLs below.
-
 ### Home Page
 
 ![Home Page](https://github.com/user-attachments/assets/317e9b5a-dc9d-4f19-9b3b-ecaef7ec0cce)
